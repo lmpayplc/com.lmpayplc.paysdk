@@ -4,6 +4,6 @@
   <groupId>com.awesomeglobal.paysdk</groupId>
   <artifactId>awesome_pay_sdk</artifactId>
   <version>0.6.11</version>
-  <packaging>pom</packaging>
+  <packaging>aar</packaging>
   <dependencies/>
 </project>

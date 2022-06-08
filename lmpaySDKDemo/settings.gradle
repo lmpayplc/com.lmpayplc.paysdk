@@ -1,0 +1,23 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+        maven {
+            url "https://raw.githubusercontent.com/lmpayplc/com.lmpayplc.paysdk/master"
+        }
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven {
+            url "https://raw.githubusercontent.com/lmpayplc/com.lmpayplc.paysdk/master"
+        }
+    }
+}
+rootProject.name = "lmpaySDKDemo"
+
+include ':lemapaysdkdemo'

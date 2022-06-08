@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.awesome.lemapay.demo">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name="com.awesome.lemapaysdkdemo.moudles.app.App"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Android_lemapay">
+        <activity
+            android:name="com.awesome.lemapaysdkdemo.lmapi.LmEntryPayActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.awesome.lemapaysdkdemo.lmapi.LmEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:taskAffinity="com.awesome.lemapaysdkdemo" />
+
+        <activity android:name="com.awesome.lemapaysdkdemo.moudles.main.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- 乐马支付SDK activity -->
+        <activity
+            android:name="com.awesomeglobal.paysdk.h5.AuthH5Activity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.awesomeglobal.paysdk.h5.PayH5LMActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>
